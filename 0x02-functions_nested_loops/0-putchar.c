@@ -2,7 +2,7 @@
  * File: 0-putchar.c
  * Auth: Musah Ibrahim
  */
-#include "alx.h"
+#include "main.h"
 
 /**
   * main - Entry point
