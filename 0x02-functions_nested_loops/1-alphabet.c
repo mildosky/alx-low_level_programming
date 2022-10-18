@@ -1,23 +1,16 @@
-/*
- * File: 1-alphabet.c
- * Auth: Musah Ibrahim
- */
-
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
+#include "main.h"
 /**
- * print_alphabet - a function that prints the alphabet, in lowercase
- *
- * Return: Always 0 (Succes)
+ * print_alphabet - Print alphabet in lowercase using only `_putchar`
+ * Return: 0
  */
 void print_alphabet(void)
 {
-  int n;
-  for (n = 'a'; n <= 'z'; n++)
-    {
-      _putchar(n);
-    }
-  _putchar('\n');
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
