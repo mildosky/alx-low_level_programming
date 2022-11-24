@@ -1,24 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 
 /**
- * list_len - computes the length of the liked list..
- * @h: a pointer to the list to iterato to.
- * Return: the number of nodes
- */
+ * list_len - Calculate the number of elements.
+ * @h: Pointer to a list.
+ * Return: Integer.
+ **/
+
 size_t list_len(const list_t *h)
 {
-	const list_t *tmp;
-	size_t i = 0;
+	const list_t *temp;
+	unsigned int counter = 0;
 
-	tmp = h;
-	if (tmp)
-		tmp = h;
-	while (tmp)
+	temp = h;
+	while (temp)
 	{
-		i++;
-		tmp = tmp->next;
+		counter++;
+		temp = temp->next;
 	}
-	return (i);
+	return (counter);
 }
